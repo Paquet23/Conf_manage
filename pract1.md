@@ -11,7 +11,7 @@ grep -oE '^[^:]+' /etc/passwd | sort
 ## Задача 2
 
 ```bash
-grep -v '^#' /etc/protocols | awk '{print $2, $1}' | sort -k2 -nr | head -n 5
+grep -v '^#' /etc/protocols | awk '{print $2, $1}' | sort -k1 -nr | head -n 5
 ```
 
 Фильтрует комментарии, меняет местами имя и номер протокола, сортирует по убыванию номеров и выводит 5 наибольших значений.
